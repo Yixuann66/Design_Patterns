@@ -17,6 +17,9 @@ package com.dengyixuan.structural.adapter_object;/**
  * computer只能使用sd卡，所以需要将tfcard转换为sd卡进行读取 不能直接将TFcard传给computer进行数据读取
  * <p>
  * 类适配器要有接口规范的时候才可以使用
+ *
+ * 案例：reader 和 inputStreamReader 的适配器使用 InputStreamReader 和 OutPutStreamWriter
+ *
  * @date 05/05/2023 18:30
  */
 public class Client {
