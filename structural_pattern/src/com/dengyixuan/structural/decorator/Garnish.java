@@ -15,6 +15,13 @@ public abstract class Garnish extends FastFood {
 //        this.fastFood = fastFood;
 //    }
 
+    /**
+     * 构造器传入的是fastfoot 装饰者在这个fastfood的基础上进行装饰
+     *
+     * @param price
+     * @param desc
+     * @param fastFood
+     */
     public Garnish(float price, String desc, FastFood fastFood) {
         super(price, desc);
         this.fastFood = fastFood;

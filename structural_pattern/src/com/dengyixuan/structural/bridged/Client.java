@@ -18,6 +18,14 @@ package com.dengyixuan.structural.bridged;/**
 public class Client {
 
     public static void main(String[] args) {
+        OperatingSystem mac = new Mac(new AVIFile());
+        mac.play("视频文件");
+        OperatingSystem mac1 = new Mac(new RmvbFile());
+        mac1.play("视频文件");
+
+        OperatingSystem windows = new Windows(new AVIFile());
+        windows.play("视频文件");
+
 
     }
 }

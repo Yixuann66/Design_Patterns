@@ -16,6 +16,11 @@ public class Egg extends Garnish {
         super(1, "鸡蛋", fastFood);
     }
 
+    /**
+     * 重写cost和描述的方法，getFastFood()获取角色，自身方法获取装饰者
+     *
+     * @return
+     */
     @Override
     public float cost() {
 
