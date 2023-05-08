@@ -1,12 +1,9 @@
-package com.dengyixuan.behavioral.template_method;/**
- * @Author 85067
- * @create 08/05/2023 15:54
- */
+package com.dengyixuan.behavioral.template_method;
 
 /**
  * @author 85067
  * @version 1.0
- * @description: 模板方法模式 定义一个算法的骨架（父类），具体的算法实现由其子类来产生
+ * @description: 模板方法模式 定义一个算法的骨架和某些公共方法（父类），具体的算法实现由其子类来产生
  * <p>
  * 抽象类
  * 给出算法的轮廓和股价
@@ -17,6 +14,8 @@ package com.dengyixuan.behavioral.template_method;/**
  * <p>
  * 具体子类
  * 实现抽象类定义的钩子方法和抽象方法
+ *
+ *
  * @date 08/05/2023 15:54
  */
 public class Client {
