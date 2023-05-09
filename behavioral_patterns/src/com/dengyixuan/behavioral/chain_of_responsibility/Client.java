@@ -24,4 +24,16 @@ package com.dengyixuan.behavioral.chain_of_responsibility;/**
  * @date 08/05/2023 19:09
  */
 public class Client {
+    public static void main(String[] args) {
+        LeaveRequest leaveRequest = new LeaveRequest("明", 7, "肚子痛");
+        GroupLeader groupLeader = new GroupLeader();
+        Manager manager = new Manager();
+        GeneralManager generalManager = new GeneralManager();
+
+        groupLeader.setNextHandler(manager);
+        manager.setNextHandler(generalManager);
+
+
+        groupLeader.submit(leaveRequest);
+    }
 }
